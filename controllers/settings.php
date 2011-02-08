@@ -1,7 +1,6 @@
 <?php
 class Settings extends Dashboard_Controller 
 {
-
     function __construct() 
     {
         parent::__construct();
