@@ -9,4 +9,4 @@
 *
 * Standard installed routes for Module Template. 
 */
-$route['module_template'] 			= 'module_template';
+$route['module-template'] 			= 'module_template';
