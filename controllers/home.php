@@ -5,9 +5,9 @@ class Home extends Dashboard_Controller
     {
         parent::__construct();
 
-		$this->data['page_title'] = 'Module Template';
+		$this->load->config('config');
 
-		$this->load->config('module_template');
+		$this->data['page_title'] = 'Module Template';
 	}
 	
 	function custom()

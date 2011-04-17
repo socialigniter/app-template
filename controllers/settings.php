@@ -9,13 +9,20 @@ class Settings extends Dashboard_Controller
         
         $this->load->config('module_template');
         
-		$this->data['page_title']	= 'Settings';
+		$this->data['page_title']	= 'App Template';
     }
  
  	function index()
 	{ 	
-		$this->data['sub_title'] = 'Template';
-		$this->render();
-	}	
+		$this->data['sub_title'] = 'Settings';
+		$this->render('dashboard_wide');
+	}
+	
+	function widgets()
+	{
+		$this->data['sub_title'] = 'Widgets';		
+		
+		$this->render('dashboard_wide');
+	}		
 
 }

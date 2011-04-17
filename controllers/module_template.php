@@ -5,7 +5,7 @@ class Module_template extends Site_Controller
     {
         parent::__construct();       
 
-		$this->load->config('module_template');
+		$this->load->config('config');
 	}
 	
 	function index()

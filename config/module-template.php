@@ -12,4 +12,4 @@
 * Description: this file Social Igniter
 */
 
-$config['custom_value']		= '';
+$config['module-template_path']		= 'module-template/';
