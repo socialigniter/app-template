@@ -12,4 +12,4 @@
 * Description: this file Social Igniter
 */
 
-$config['module-template_path']		= 'module-template/';
+$config['app-template_path']		= 'app-template/';

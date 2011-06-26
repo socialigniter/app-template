@@ -1,16 +1,14 @@
 <?php
-class Module_template extends Site_Controller
+class App_template extends Site_Controller
 {
     function __construct()
     {
         parent::__construct();       
-
-		$this->load->config('config');
 	}
 	
 	function index()
 	{
-		$this->data['page_title'] = 'Module Template';
+		$this->data['page_title'] = 'App Template';
 		$this->render();	
 	}
 

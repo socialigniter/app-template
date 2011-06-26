@@ -8,7 +8,7 @@
 
 <p>The HTML for this file is located at:</p>
 
-<pre>/application/modules/module_template/views/home/custom</pre>
+<pre>/application/modules/app-template/views/home/custom</pre>
 
 <h3>Manage</h3>
 
