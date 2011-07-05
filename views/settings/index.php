@@ -2,8 +2,9 @@
 <div class="content_wrap_inner">
 
 	<div class="content_inner_top_right">
-		<h3>Module</h3>
+		<h3>App</h3>
 		<p><?= form_dropdown('enabled', config_item('enable_disable'), $settings['app-template']['enabled']) ?></p>
+		<p><a href="<?= base_url() ?>api/<?= $this_module ?>/uninstall" id="app_uninstall" class="button_delete">Uninstall</a></p>
 	</div>
 	
 	<h3>Permissions</h3>
@@ -48,7 +49,7 @@
 	<?= form_dropdown('module_per_page', config_item('amount_increments_five'), $settings['app-template']['comments_per_page']) ?>
 	</p>
 
-	<input type="hidden" name="module" value="app-template">
+	<input type="hidden" name="module" value="<?= $this_module ?>">
 
 	<p><input type="submit" name="save" value="Save" /></p>
 
