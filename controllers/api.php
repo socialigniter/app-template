@@ -15,7 +15,7 @@ class Api extends Oauth_Controller
 		$this->load->config('install');        
 
 		// Settings & Create Folders
-		$settings = $this->installer->install_settings('app-template', config_item('app_template_settings'));
+		$settings = $this->installer->install_settings('app-template', config_item('app-template_settings'));
 	
 		if ($settings == TRUE)
 		{

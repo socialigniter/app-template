@@ -13,9 +13,9 @@
 */
 
 /* Settings */
-$config['app-template']['enabled']				= 'TRUE';
-$config['app-template']['create_permission'] 	= '3';
-$config['app-template']['publish_permission']	= '2';
-$config['app-template']['manage_permission']	= '2';
-$config['app-template']['comments_per_page']	= '5';
-$config['app-template']['comments_allow']		= 'no';
+$config['app-template_settings']['enabled']				= 'TRUE';
+$config['app-template_settings']['create_permission'] 	= '3';
+$config['app-template_settings']['publish_permission']	= '2';
+$config['app-template_settings']['manage_permission']	= '2';
+$config['app-template_settings']['comments_per_page']	= '5';
+$config['app-template_settings']['comments_allow']		= 'no';
