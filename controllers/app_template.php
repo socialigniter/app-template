@@ -1,5 +1,14 @@
-<?php
-class App_template extends Site_Controller
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+/**
+* Name:			Social Igniter : {APP_NAME} : Controller
+* Author: 		{SITE_NAME}
+* 		  		{SITE_ADMIN}
+* 
+* Project:		http://social-igniter.com
+* 
+* Description: This file is for the public {APP_NAME} Controller class
+*/
+class {APP_CLASS} extends Site_Controller
 {
     function __construct()
     {
@@ -8,8 +17,8 @@ class App_template extends Site_Controller
 	
 	function index()
 	{
-		$this->data['page_title'] = 'App Template';
-		$this->render();	
+		$this->data['page_title'] = '{APP_NAME}';
+		$this->render();
 	}
 
 	function view() 

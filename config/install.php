@@ -1,21 +1,16 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 /**
-* Name:			Social Igniter : App Template : Install
-* Author: 		Brennan Novak
-* 		  		contact@social-igniter.com
+* Name:			Social Igniter : {APP_NAME} : Install
+* Author: 		{SITE_NAME}
+* 		  		{SITE_ADMIN}
 *          
-* Created: 		Brennan Novak
-*
 * Project:		http://social-igniter.com/
-* Source: 		http://github.com/socialigniter/app-template
 *
-* Description: 	Install values for App Template for Social Igniter 
+* Description: 	Installer values for {APP_NAME} for Social Igniter 
 */
 
 /* Settings */
-$config['app-template_settings']['enabled']				= 'TRUE';
-$config['app-template_settings']['create_permission'] 	= '3';
-$config['app-template_settings']['publish_permission']	= '2';
-$config['app-template_settings']['manage_permission']	= '2';
-$config['app-template_settings']['comments_per_page']	= '5';
-$config['app-template_settings']['comments_allow']		= 'no';
+$config['{APP_URL}_settings']['enabled']			= 'TRUE';
+$config['{APP_URL}_settings']['create_permission'] 	= '3';
+$config['{APP_URL}_settings']['publish_permission']	= '2';
+$config['{APP_URL}_settings']['manage_permission']	= '2';

@@ -1,12 +1,11 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /**
-* Name:		Social Igniter : Module Template : Routes
-* Author: 	Brennan Novak
-* 		  	contact@social-igniter.com
+* Name:			Social Igniter : {APP_NAME} : Routes
+* Author: 		{SITE_NAME}
+* 		  		{SITE_ADMIN}
+*          
+* Project:		http://social-igniter.com/
 *
-* Project:	http://social-igniter.com/
-* Source: 	http://github.com/socialigniter/module-template
-*
-* Standard installed routes for Module Template. 
+* Description: 	URI Routes for {APP_NAME} for Social Igniter 
 */
-$route['app-template'] 			= 'app_template';
+$route['{APP_URL}'] 			= '{APP_CLASS}';

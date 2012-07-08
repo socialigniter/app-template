@@ -1,1 +1,1 @@
-<h3>App Template Widgets</h3>
+<h3>{APP_NAME} Widgets</h3>

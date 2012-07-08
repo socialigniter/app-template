@@ -1,15 +1,12 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /**
-* Name:		Social Igniter : Module Template : Config
-* Author: 	Brennan Novak
-* 		  	contact@social-igniter.com
+* Name:			Social Igniter : {APP_NAME} : Config
+* Author: 		{SITE_NAME}
+* 		  		{SITE_ADMIN}
 * 
-* Created by Brennan Novak
-*
-* Project:	http://social-igniter.com
-* Source: 	http://github.com/socialigniter/module-template
+* Project:		http://social-igniter.com
 * 
-* Description: this file Social Igniter
+* Description: this file {APP_NAME}
 */
 
-$config['app-template_path']		= 'app-template/';
+$config['{APP_URL}_path']		= '{APP_URL}/';

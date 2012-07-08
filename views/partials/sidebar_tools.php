@@ -1,1 +1,1 @@
-<li><a class="sidebar_icon" href="<?= base_url() ?>home/app-template"><img src="<?= $this_module_assets ?>app-template_24.png"><span>App Template</span></a></li>
+<li><a class="sidebar_icon" href="<?= base_url() ?>home/{APP_URL}"><img src="<?= $this_module_assets ?>{APP_URL}_24.png"><span>{APP_NAME}</span></a></li>

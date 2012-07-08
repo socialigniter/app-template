@@ -1,5 +1,13 @@
-<?php defined('BASEPATH') OR exit('No direct script access allowed');
-
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+/**
+* Name:			Social Igniter : {APP_NAME} : API Controller
+* Author: 		{SITE_NAME}
+* 		  		{SITE_ADMIN}
+* 
+* Project:		http://social-igniter.com
+* 
+* Description: This file is for the {APP_NAME} API Controller class
+*/
 class Api extends Oauth_Controller
 {
     function __construct()
@@ -15,15 +23,15 @@ class Api extends Oauth_Controller
 		$this->load->config('install');        
 
 		// Settings & Create Folders
-		$settings = $this->installer->install_settings('app-template', config_item('app-template_settings'));
+		$settings = $this->installer->install_settings('{APP_URL}', config_item('{APP_URL}_settings'));
 	
 		if ($settings == TRUE)
 		{
-            $message = array('status' => 'success', 'message' => 'Yay, the App Template was installed');
+            $message = array('status' => 'success', 'message' => 'Yay, the {APP_NAME} App was installed');
         }
         else
         {
-            $message = array('status' => 'error', 'message' => 'Dang App Template could not be uninstalled');
+            $message = array('status' => 'error', 'message' => 'Dang {APP_NAME} App could not be installed');
         }		
 		
 		$this->response($message, 200);

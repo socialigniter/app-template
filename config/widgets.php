@@ -1,14 +1,12 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 /**
-* Name:			Social Igniter : App Template : Widgets
-* Author: 		Brennan Novak
-* 		  		contact@social-igniter.com
-*         		@brennannovak
+* Name:			Social Igniter : {APP_NAME} : Widgets
+* Author: 		{SITE_NAME}
+* 		  		{SITE_ADMIN}
 *          
 * Project:		http://social-igniter.com/
-* Source: 		http://github.com/socialigniter/module-template
 *
-* Description: 	Widgets in core install of Social Igniter
+* Description: 	Installer values for {APP_NAME} for Social Igniter 
 */
 
-$config['app-template_widgets'] = FALSE;
+$config['{APP_URL}_widgets'] = FALSE;
