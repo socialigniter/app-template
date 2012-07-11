@@ -14,7 +14,7 @@ class Home extends Dashboard_Controller
     {
         parent::__construct();
 
-		$this->load->config('config');
+		$this->load->config('{APP_CLASS}');
 
 		$this->data['page_title'] = '{APP_NAME}';
 	}
