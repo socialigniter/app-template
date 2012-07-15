@@ -23,7 +23,6 @@ class {APP_CLASS} extends Site_Controller
 
 	function view() 
 	{		
-		// Basic Content Redirect	
 		$this->render();
 	}
 	
