@@ -1,6 +1,6 @@
 <?php
 
-class OAuth_Provider_{APP_CLASS} extends OAuth_Provider {
+class OAuth_Provider_{APP_CLASS_TITLE} extends OAuth_Provider {
 
 	public $name = '{APP_URL}';
 	public $uid_key = 'user_id';

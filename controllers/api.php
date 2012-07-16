@@ -20,11 +20,17 @@ class Api extends Oauth_Controller
 	{
 		// Load
 		$this->load->library('installer');
-		$this->load->config('install');        
+		$this->load->config('install');
+		$this->load->dbforge();
+
+		// Create Data Table
+		$this->dbforge->add_key('data_id', TRUE);
+		$this->dbforge->add_field(config_item('database_{APP_CLASS}_data_table'));
+		$this->dbforge->create_table('data');
 
 		// Settings & Create Folders
 		$settings = $this->installer->install_settings('{APP_URL}', config_item('{APP_URL}_settings'));
-	
+
 		if ($settings == TRUE)
 		{
             $message = array('status' => 'success', 'message' => 'Yay, the {APP_NAME} App was installed');
@@ -36,5 +42,6 @@ class Api extends Oauth_Controller
 		
 		$this->response($message, 200);
 	} 
+
 
 }

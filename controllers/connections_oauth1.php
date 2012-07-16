@@ -20,6 +20,8 @@ class Connections extends MY_Controller
 
 	function index()
 	{
+		// If you want to offer "Signup" by third party Connect do that here
+		// Study Facebook or Twitter Apps to see how this done
 		redirect(base_url());
 	}
 
@@ -86,16 +88,16 @@ class Connections extends MY_Controller
 			else
 			{			
 				// Get User Details
-				$fitbit_user = $fitbit->get_user_info($consumer, $tokens);
+				$connection_user = $fitbit->get_user_info($consumer, $tokens);
 
 				// Add Connection	
 	       		$connection_data = array(
 	       			'site_id'				=> $this->module_site->site_id,
 	       			'user_id'				=> $this->session->userdata('user_id'),
-	       			'module'				=> 'fitbit',
+	       			'module'				=> '{APP_URL}',
 	       			'type'					=> 'primary',
-	       			'connection_user_id'	=> $fitbit_user->encodedId,
-	       			'connection_username'	=> $fitbit_user->nickname,
+	       			'connection_user_id'	=> '123456789',
+	       			'connection_username'	=> 'matchvaluefrom_get_user_info',
 	       			'auth_one'				=> $tokens->access_token,
 	       			'auth_two'				=> $tokens->secret
 	       		);

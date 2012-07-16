@@ -1,31 +1,36 @@
 <?php
 
-class {APP_CLASS}_model extends CI_Model {
+class Data_model extends CI_Model {
     
     function __construct()
     {
         parent::__construct();
     }
     
-    function get_data($limit=10)
+    function get_data($data_id)
     {
- 		$this->db->select('data.status_id, table.user_id');
+ 		$this->db->select('*');
  		$this->db->from('data');    
- 		$this->db->join('users', 'data.user_id = user.user_id'); 				
+ 		$this->db->where('data_id', $data_id);
  		$this->db->order_by('created_at', 'desc'); 
-		$this->db->limit($limit);    
+		$this->db->limit(1);    
+ 		$result = $this->db->get()->row();	
+ 		return $result;	      
+    }
+
+    function get_data_view()
+    {
+ 		$this->db->select('*');
+ 		$this->db->from('data');    
+ 		$this->db->order_by('created_at', 'desc'); 
  		$result = $this->db->get();	
  		return $result->result();	      
     }
     
     function add_data($data)
     {
- 		$data = array(
-			'user_id' 	 		=> $data['user_id'],
-			'text'  	 		=> $data['text'],
-			'created_at' 		=> unix_to_mysql(now()),
-			'updated_at' 		=> unix_to_mysql(now())
-		);
+ 		$data['created_at'] = unix_to_mysql(now());
+		$data['updated_at'] = unix_to_mysql(now());
 
 		$insert 	= $this->db->insert('data', $data);
 		$data_id 	= $this->db->insert_id();

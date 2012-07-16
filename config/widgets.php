@@ -9,4 +9,16 @@
 * Description: 	Installer values for {APP_NAME} for Social Igniter 
 */
 
-$config['{APP_URL}_widgets'] = FALSE;
+$config['{APP_URL}_widgets'][] = array(
+	'regions'	=> array('sidebar','content'),
+	'widget'	=> array(
+		'module'	=> '{APP_URL}',
+		'name'		=> 'Recent Data',
+		'method'	=> 'run',
+		'path'		=> 'widgets_recent_data',
+		'multiple'	=> 'FALSE',
+		'order'		=> '1',
+		'title'		=> 'Recent Data',
+		'content'	=> ''
+	)
+);
