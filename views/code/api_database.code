@@ -1,0 +1,6 @@
+		$this->load->dbforge();
+
+		// Create Data Table
+		$this->dbforge->add_key('data_id', TRUE);
+		$this->dbforge->add_field(config_item('database_{APP_CLASS}_data_table'));
+		$this->dbforge->create_table('data');

@@ -40,7 +40,7 @@ class Connections extends MY_Controller
         {
             try
             {
-		 		$url = 'https://foursquare.com/oauth2/access_token?'.http_build_query(array(
+		 		$url = 'https://{APP_URL}.com/oauth2/access_token?'.http_build_query(array(
 					'client_id'			=> config_item('{APP_URL}_client_id'),
 					'client_secret'		=> config_item('{APP_URL}_client_secret'),
 					'grant_type'		=> 'authorization_code',
@@ -50,7 +50,7 @@ class Connections extends MY_Controller
 		
 				$token			= json_decode(file_get_contents($url)); 
 				$access_token	= $token->access_token;
-				$user_info_url	= "https://api.foursquare.com/v2/users/self?oauth_token=$access_token&v=20120717";
+				$user_info_url	= 'https://api.{APP_URL}.com/v2/users/self?oauth_token='.$access_token;
 				$user_info		= json_decode(file_get_contents($user_info_url));
 				$user_id		= 'Replace with proper object from API';
 				$username		= 'Replace with proper object from API';

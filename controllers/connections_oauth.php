@@ -123,7 +123,7 @@ class Connections extends MY_Controller
 				 	$this->session->set_flashdata('message', "Opps, we were not able to connect, perhaps your {APP_NAME} account is connected to another user");
 				 	redirect('settings/connections', 'refresh');
 				}
-			}		
+			}
 		}
 	}
 }
