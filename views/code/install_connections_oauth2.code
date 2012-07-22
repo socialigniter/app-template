@@ -1,0 +1,6 @@
+$config['{APP_URL}_settings']['client_id']	 			= '';
+$config['{APP_URL}_settings']['client_secret'] 			= '';
+$config['{APP_URL}_settings']['social_login'] 			= 'TRUE';
+$config['{APP_URL}_settings']['login_redirect']			= 'home/';
+$config['{APP_URL}_settings']['social_connection'] 		= 'TRUE';
+$config['{APP_URL}_settings']['connections_redirect']	= 'settings/connections/';

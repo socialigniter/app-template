@@ -1,0 +1,8 @@
+/* Sites */
+$config['{APP_URL}_sites'][] = array(
+	'url'		=> 'http://{APP_URL}.com/', 
+	'module'	=> '{APP_URL}',
+	'type' 		=> 'remote', 
+	'title'		=> '{APP_NAME}', 
+	'favicon'	=> 'http://{APP_URL}.com/favicon.ico'
+);

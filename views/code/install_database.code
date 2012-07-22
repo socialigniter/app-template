@@ -1,0 +1,25 @@
+/* Data Table */
+$config['database_{APP_CLASS}_data_table'] = array(
+'data_id' => array(
+	'type' 					=> 'INT',
+	'constraint' 			=> 11,
+	'unsigned' 				=> TRUE,
+	'auto_increment'		=> TRUE
+),
+'user_id' => array(
+	'type' 					=> 'INT',
+	'constraint' 			=> '11',
+	'null'					=> TRUE
+),
+'text' => array(
+	'type'					=> 'TEXT',
+	'null'					=> TRUE
+),
+'created_at' => array(
+	'type'					=> 'DATETIME',
+	'default'				=> '9999-12-31 00:00:00'
+),
+'updated_at' => array(
+	'type'					=> 'DATETIME',
+	'default'				=> '9999-12-31 00:00:00'
+));

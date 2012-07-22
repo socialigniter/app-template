@@ -37,7 +37,7 @@ class Data_model extends CI_Model {
 		return $this->db->get_where('data', array('data_id' => $data_id))->row();
     }
 
-    function udpate_data($data_id, $data)
+    function update_data($data_id, $data)
     {
 		$data['updated_at'] = unix_to_mysql(now());
 		$this->db->where('data_id', $data_id);

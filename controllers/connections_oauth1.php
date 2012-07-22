@@ -96,8 +96,8 @@ class Connections extends MY_Controller
 	       			'user_id'				=> $this->session->userdata('user_id'),
 	       			'module'				=> '{APP_URL}',
 	       			'type'					=> 'primary',
-	       			'connection_user_id'	=> '123456789',
-	       			'connection_username'	=> 'matchvaluefrom_get_user_info',
+	       			'connection_user_id'	=> '12345match_user_id6789',
+	       			'connection_username'	=> 'match_value_from_user_info',
 	       			'auth_one'				=> $tokens->access_token,
 	       			'auth_two'				=> $tokens->secret
 	       		);
