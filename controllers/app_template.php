@@ -8,7 +8,7 @@
 * 
 * Description: This file is for the public {APP_NAME} Controller class
 */
-class {APP_CLASS} extends Site_Controller
+class {APP_CLASS_TITLE} extends Site_Controller
 {
     function __construct()
     {
